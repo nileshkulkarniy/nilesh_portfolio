@@ -36,7 +36,7 @@ document.querySelectorAll('input, textarea').forEach(input => {
   });
 });
 
-// Scroll animations
+// Scroll animations - Fixed version
 document.addEventListener('DOMContentLoaded', function() {
   // Add scroll animation to elements
   const animateOnScroll = function() {
@@ -46,21 +46,33 @@ document.addEventListener('DOMContentLoaded', function() {
       const elementPosition = element.getBoundingClientRect().top;
       const screenPosition = window.innerHeight / 1.3;
       
-      if (elementPosition < screenPosition) {
+      if (elementPosition < screenPosition && !element.classList.contains('animated')) {
+        element.classList.add('animated');
         element.style.animationPlayState = 'running';
       }
     });
   };
   
-  // Initial check
-  animateOnScroll();
+  // Initial check with delay to prevent flickering
+  setTimeout(() => {
+    animateOnScroll();
+  }, 100);
   
   // Check on scroll
   window.addEventListener('scroll', animateOnScroll);
 });
 
-// Reveal animations for elements when they come into view
+// Reveal animations for elements when they come into view - Fixed version
 document.addEventListener('DOMContentLoaded', function() {
+  // Ensure all elements start visible
+  const elements = document.querySelectorAll('.card, .skills-grid > div, .project');
+  elements.forEach(el => {
+    el.classList.add('animated');
+    el.style.opacity = '1';
+    el.style.transform = 'translateY(0)';
+  });
+  
+  // Set up intersection observer for scroll animations
   const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -69,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
         entry.target.classList.add('animated');
       }
     });
@@ -77,6 +89,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Observe elements
   document.querySelectorAll('.card, .skills-grid > div, .project').forEach(el => {
-    observer.observe(el);
+    // Only observe if not already animated
+    if (!el.classList.contains('animated')) {
+      observer.observe(el);
+    }
   });
 });

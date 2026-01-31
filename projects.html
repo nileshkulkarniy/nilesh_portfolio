@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Projects by Nilesh Kulkarni - Showcase of web development, AI/ML, and full-stack applications including WanderLust, EmotionSense, and Lab Slot Booking System">
+  <meta name="description" content="Projects by Nilesh Kulkarni - Showcase of web development, AI/ML, and full-stack applications including Lab Slot Booking System, EmotionSense, and Electricity Bill Payment System">
   <title>Projects — Nilesh Kulkarni</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
-      <a class="btn" href="assets/Nilesh_Kulkarni_Resume_Professional.pdf" download>Download Resume</a>
+      <a class="btn" href="assets/NileshResume.pdf" download>Download Resume</a>
     </nav>
   </div>
 </header>
@@ -30,69 +30,88 @@
     <p class="subtitle">A showcase of my work and contributions</p>
   </header>
   
-  <section class="card project-card" id="wanderlust">
+  <section class="card project-card" id="attendance">
     <div class="project-header">
-      <h2>WanderLust</h2>
-      <span class="project-tag"><i class="fas fa-layer-group"></i> Full-Stack</span>
+      <h2>Attendance Management System</h2>
+      <span class="project-tag"><i class="fas fa-users"></i> Java Web Application</span>
     </div>
-    <p class="project-stack"><strong><i class="fas fa-code"></i> Stack:</strong> JavaScript, Node.js, Express, MongoDB, Bootstrap, EJS</p>
-    <p>A full-stack web application for discovering and sharing travel experiences. Built with Node.js, Express, and MongoDB, it allows users to browse, create, and review travel listings.</p>
+    <p class="project-stack"><strong><i class="fas fa-code"></i> Stack:</strong> Java, JSP, Servlets, MySQL, JDBC, HTML, CSS, JavaScript, Maven, Jetty</p>
+    <p>Developed a comprehensive Attendance Management System for educational institutions using Java Servlets, JSP, and MySQL. Implemented role-based access with separate Admin and Teacher portals. Admin Module manages courses, subjects, students, teachers, schedules, and generates attendance reports. Teacher Module allows marking daily attendance and viewing class-wise, subject-wise, and monthly attendance reports.</p>
     <div class="project-links">
-      <a href="https://wanderlust-demo.example.com" target="_blank" class="btn ghost">View Demo</a>
-      <a href="https://github.com/nileshkulkarniy/Wanderlust" target="_blank" class="btn">GitHub Repo</a>
+      <a href="https://github.com/nileshkulkarniy/attendance-management-system" target="_blank" class="btn">GitHub Repo</a>
     </div>
     <h3><i class="fas fa-star"></i> Key features</h3>
     <ul class="feature-list">
-      <li><i class="fas fa-check-circle"></i> Browse travel listings with images and descriptions</li>
-      <li><i class="fas fa-check-circle"></i> Search and filter listings by location or category</li>
-      <li><i class="fas fa-check-circle"></i> User authentication (signup/login/logout)</li>
-      <li><i class="fas fa-check-circle"></i> Create and manage your own travel listings</li>
-      <li><i class="fas fa-check-circle"></i> Review and rate other users' listings</li>
-      <li><i class="fas fa-check-circle"></i> Responsive design for mobile and desktop</li>
-    </ul>
-  </section>
-  
-  <section class="card project-card" id="emotionsense">
-    <div class="project-header">
-      <h2>EmotionSense: AI-powered Emotion Recognition</h2>
-      <span class="project-tag"><i class="fas fa-brain"></i> AI/ML</span>
-    </div>
-    <p class="project-stack"><strong><i class="fas fa-code"></i> Stack:</strong> React, Vite, Flask, Python, TensorFlow, OpenCV, MongoDB</p>
-    <p>Advanced AI-powered emotion detection application that analyzes facial expressions, voice tones, and text to identify human emotions. The application provides a comprehensive dashboard for users to interact with different emotion analysis modules, featuring real-time processing and visualization capabilities.</p>
-    <div class="project-links">
-      <a href="https://emotionsense-demo.example.com" target="_blank" class="btn ghost">View Demo</a>
-      <a href="https://github.com/nileshkulkarniy/EmotionSense-AI-powered-Emotion-Recognition-and-Analytics-System" target="_blank" class="btn">GitHub Repo</a>
-    </div>
-    <h3><i class="fas fa-star"></i> Key features</h3>
-    <ul class="feature-list">
-      <li><i class="fas fa-check-circle"></i> Face Emotion Detection using computer vision techniques</li>
-      <li><i class="fas fa-check-circle"></i> Voice Emotion Analysis through speech-to-text processing</li>
-      <li><i class="fas fa-check-circle"></i> Text Emotion Classification using NLP techniques</li>
-      <li><i class="fas fa-check-circle"></i> User Authentication with JWT token authentication</li>
-      <li><i class="fas fa-check-circle"></i> Real-time Visualization with interactive charts</li>
-      <li><i class="fas fa-check-circle"></i> Historical Data Tracking for each module</li>
+      <li><i class="fas fa-check-circle"></i> Role-based access with separate Admin and Teacher portals</li>
+      <li><i class="fas fa-check-circle"></i> Admin Module: Manage courses, subjects, students, teachers, schedules</li>
+      <li><i class="fas fa-check-circle"></i> Teacher Module: Mark daily attendance, view reports</li>
+      <li><i class="fas fa-check-circle"></i> 3-tier architecture (Presentation, Business Logic, Data Layer)</li>
+      <li><i class="fas fa-check-circle"></i> Session-based authentication and secure password handling</li>
+      <li><i class="fas fa-check-circle"></i> Responsive UI with HTML, CSS, JavaScript, and AJAX</li>
+      <li><i class="fas fa-check-circle"></i> Built and deployed using Maven with embedded Jetty server</li>
     </ul>
   </section>
   
   <section class="card project-card" id="labbooking">
     <div class="project-header">
       <h2>Lab Slot Booking System</h2>
-      <span class="project-tag"><i class="fas fa-globe"></i> Web App</span>
+      <span class="project-tag"><i class="fas fa-globe"></i> Full-Stack Web App</span>
     </div>
-    <p class="project-stack"><strong><i class="fas fa-code"></i> Stack:</strong> Node.js, Express, MongoDB, HTML, CSS, JavaScript</p>
-    <p>Comprehensive web application for managing laboratory slot bookings in educational institutions. This system allows administrators to manage labs, slots, and users, while faculty members can book and manage their lab reservations.</p>
+    <p class="project-stack"><strong><i class="fas fa-code"></i> Stack:</strong> Node.js, Express.js, MySQL, HTML, CSS, JavaScript</p>
+    <p>Developed a full-stack web application for managing and booking laboratory slots. Implemented Admin and Student roles with secure authentication. Features include slot creation, booking, cancellation, dashboards, and booking history. Improved lab resource utilization through automated scheduling.</p>
     <div class="project-links">
-      <a href="https://labbooking-demo.example.com" target="_blank" class="btn ghost">View Demo</a>
       <a href="https://github.com/nileshkulkarniy/lab_slot_booking_system" target="_blank" class="btn">GitHub Repo</a>
     </div>
     <h3><i class="fas fa-star"></i> Key features</h3>
     <ul class="feature-list">
-      <li><i class="fas fa-check-circle"></i> Role-based access control (Admin & Faculty)</li>
-      <li><i class="fas fa-check-circle"></i> Real-time slot availability</li>
-      <li><i class="fas fa-check-circle"></i> Booking management system</li>
-      <li><i class="fas fa-check-circle"></i> PDF report generation</li>
-      <li><i class="fas fa-check-circle"></i> Secure authentication with JWT</li>
-      <li><i class="fas fa-check-circle"></i> Responsive web design</li>
+      <li><i class="fas fa-check-circle"></i> Admin and Student role-based access control</li>
+      <li><i class="fas fa-check-circle"></i> Secure authentication system</li>
+      <li><i class="fas fa-check-circle"></i> Slot creation, booking, and cancellation</li>
+      <li><i class="fas fa-check-circle"></i> Dashboard for both roles</li>
+      <li><i class="fas fa-check-circle"></i> Booking history tracking</li>
+      <li><i class="fas fa-check-circle"></i> Automated scheduling for better resource utilization</li>
+    </ul>
+  </section>
+  
+  <section class="card project-card" id="emotionsense">
+    <div class="project-header">
+      <h2>EmotionSense – AI Powered Facial Emotion Detection & Analysis System</h2>
+      <span class="project-tag"><i class="fas fa-brain"></i> AI/ML</span>
+    </div>
+    <p class="project-stack"><strong><i class="fas fa-code"></i> Stack:</strong> Python, OpenCV, Machine Learning</p>
+    <p>Developed an AI-based system to detect and analyse human facial emotions in real time. Used Python, OpenCV, and Machine Learning models for emotion classification. Detects emotions such as Happy, Sad, Angry, Neutral, and Surprise. Implemented face detection and emotion recognition using computer vision techniques.</p>
+    <div class="project-links">
+      <a href="https://github.com/nileshkulkarniy/EmotionSense-AI-powered-Emotion-Recognition-and-Analytics-System" target="_blank" class="btn">GitHub Repo</a>
+    </div>
+    <h3><i class="fas fa-star"></i> Key features</h3>
+    <ul class="feature-list">
+      <li><i class="fas fa-check-circle"></i> Real-time facial emotion detection</li>
+      <li><i class="fas fa-check-circle"></i> Emotion classification (Happy, Sad, Angry, Neutral, Surprise)</li>
+      <li><i class="fas fa-check-circle"></i> Face detection using computer vision</li>
+      <li><i class="fas fa-check-circle"></i> Machine Learning model implementation</li>
+      <li><i class="fas fa-check-circle"></i> Practical understanding of AI, ML, and image processing</li>
+      <li><i class="fas fa-check-circle"></i> Computer Vision techniques</li>
+    </ul>
+  </section>
+  
+  <section class="card project-card" id="electricitybill">
+    <div class="project-header">
+      <h2>Electricity Bill Payment System</h2>
+      <span class="project-tag"><i class="fas fa-desktop"></i> Desktop Application</span>
+    </div>
+    <p class="project-stack"><strong><i class="fas fa-code"></i> Stack:</strong> Java, Java Swing, MySQL, JDBC</p>
+    <p>Developed a Java-based desktop application for managing electricity billing and payments. Designed separate Admin and Customer interfaces with secure role-based authentication. Admin module handles customer management, bill generation, meter details, and payment history. Customer module allows viewing bills, paying bills, checking payment status, and accessing personal dashboard.</p>
+    <div class="project-links">
+      <a href="https://github.com/nileshkulkarniy/Electricity-Bill-Payment-System" target="_blank" class="btn">GitHub Repo</a>
+    </div>
+    <h3><i class="fas fa-star"></i> Key features</h3>
+    <ul class="feature-list">
+      <li><i class="fas fa-check-circle"></i> Separate Admin and Customer interfaces</li>
+      <li><i class="fas fa-check-circle"></i> Admin module: customer management, bill generation, meter details</li>
+      <li><i class="fas fa-check-circle"></i> Customer module: view/pay bills, check payment status</li>
+      <li><i class="fas fa-check-circle"></i> Secure role-based authentication</li>
+      <li><i class="fas fa-check-circle"></i> MySQL database with login, customer, billing, and meter tables</li>
+      <li><i class="fas fa-check-circle"></i> Payment history tracking</li>
     </ul>
   </section>
   
@@ -120,7 +139,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2025 Nilesh Kulkarni — Built with ❤️</p>
+    <p>&copy; 2026 Nilesh Kulkarni — Built with ❤️</p>
   </div>
 </footer>
 </body>
